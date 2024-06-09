@@ -16,7 +16,7 @@ namespace DHLOne.Controllers
         public IActionResult Index()
         {
             List<Item> objItemList = _db.Items.ToList();
-            return View();
+            return View(objItemList);
         }
     }
 }
